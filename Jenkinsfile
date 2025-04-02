@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/your-repo/calculator-project.git'
+                git 'https://github.com/vigneshbhatn/Calculator-Java.git'
             }
         }
 
