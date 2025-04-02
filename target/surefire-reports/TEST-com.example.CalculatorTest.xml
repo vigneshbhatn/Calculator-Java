@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.example.CalculatorTest" time="0.048" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.example.CalculatorTest" time="0.046" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="GB"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-21-openjdk/lib"/>
-    <property name="sun.java.command" value="/home/vigneshbhatn/Vignesh/Projects/Program 6th/calculator-project/Calculator-Java/target/surefire/surefirebooter3586216647880784248.jar /home/vigneshbhatn/Vignesh/Projects/Program 6th/calculator-project/Calculator-Java/target/surefire 2025-04-02T08-14-16_734-jvmRun1 surefire2877183377475414022tmp surefire_03175655664698281646tmp"/>
+    <property name="sun.java.command" value="/home/vigneshbhatn/Vignesh/Projects/Program 6th/calculator-project/Calculator-Java/target/surefire/surefirebooter15186681955222000368.jar /home/vigneshbhatn/Vignesh/Projects/Program 6th/calculator-project/Calculator-Java/target/surefire 2025-04-02T09-16-49_505-jvmRun1 surefire15889618716963682727tmp surefire_04590498732301831768tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/vigneshbhatn/Vignesh/Projects/Program 6th/calculator-project/Calculator-Java/target/test-classes:/home/vigneshbhatn/Vignesh/Projects/Program 6th/calculator-project/Calculator-Java/target/classes:/home/vigneshbhatn/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.1/junit-jupiter-api-5.8.1.jar:/home/vigneshbhatn/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/vigneshbhatn/.m2/repository/org/junit/platform/junit-platform-commons/1.8.1/junit-platform-commons-1.8.1.jar:/home/vigneshbhatn/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/vigneshbhatn/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.1/junit-jupiter-engine-5.8.1.jar:/home/vigneshbhatn/.m2/repository/org/junit/platform/junit-platform-engine/1.8.1/junit-platform-engine-1.8.1.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -27,7 +27,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/home/vigneshbhatn/Vignesh/Projects/Program 6th/calculator-project/Calculator-Java/target/surefire/surefirebooter3586216647880784248.jar"/>
+    <property name="surefire.real.class.path" value="/home/vigneshbhatn/Vignesh/Projects/Program 6th/calculator-project/Calculator-Java/target/surefire/surefirebooter15186681955222000368.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.6+7"/>
     <property name="user.name" value="vigneshbhatn"/>
@@ -54,9 +54,8 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testMultiplication" classname="com.example.CalculatorTest" time="0.03"/>
-  <testcase name="testAddition" classname="com.example.CalculatorTest" time="0"/>
-  <testcase name="testDivisionByZero" classname="com.example.CalculatorTest" time="0.003"/>
-  <testcase name="testDivision" classname="com.example.CalculatorTest" time="0.001"/>
+  <testcase name="testMultiplication" classname="com.example.CalculatorTest" time="0.029"/>
+  <testcase name="testAddition" classname="com.example.CalculatorTest" time="0.001"/>
+  <testcase name="testDivision" classname="com.example.CalculatorTest" time="0.003"/>
   <testcase name="testSubtraction" classname="com.example.CalculatorTest" time="0.001"/>
 </testsuite>

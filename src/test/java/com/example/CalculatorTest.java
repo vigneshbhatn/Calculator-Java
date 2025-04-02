@@ -1,37 +1,36 @@
 package com.example;
 
-import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
-public class CalculatorTest {
-
+class CalculatorTest {
     private final Calculator calculator = new Calculator();
 
     @Test
-    public void testAddition() {
-        assertEquals(10, calculator.add(5, 5));
+    void testAddition() {
+        assertEquals(8, calculator.add(5, 3));
+        assertEquals(-2, calculator.add(-5, 3));
+        assertEquals(0, calculator.add(0, 0));
     }
 
     @Test
-    public void testSubtraction() {
+    void testSubtraction() {
         assertEquals(2, calculator.subtract(5, 3));
+        assertEquals(-8, calculator.subtract(-5, 3));
+        assertEquals(0, calculator.subtract(0, 0));
     }
 
     @Test
-    public void testMultiplication() {
-        assertEquals(15, calculator.multiply(3, 5));
+    void testMultiplication() {
+        assertEquals(15, calculator.multiply(5, 3));
+        assertEquals(-15, calculator.multiply(-5, 3));
+        assertEquals(0, calculator.multiply(5, 0));
     }
 
     @Test
-    public void testDivision() {
-        assertEquals(2, calculator.divide(10, 5));
-    }
-
-    @Test
-    public void testDivisionByZero() {
-        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
-            calculator.divide(10, 0);
-        });
-        assertEquals("Division by zero is not allowed", exception.getMessage());
+    void testDivision() {
+        assertEquals(2, calculator.divide(6, 3));
+        assertEquals(-2, calculator.divide(-6, 3));
+        assertThrows(IllegalArgumentException.class, () -> calculator.divide(5, 0), "Division by zero should throw an exception");
     }
 }
