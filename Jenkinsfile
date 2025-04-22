@@ -24,6 +24,7 @@ pipeline {
     post {
         success {
             echo "✅ Build and tests successful!"
+            archiveArtifacts artifacts: 'target/*.jar', fingerprint: true
         }
         failure {
             echo "❌ Build or tests failed!"
