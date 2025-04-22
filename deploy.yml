@@ -1,0 +1,19 @@
+---
+- name: Deploy Maven artifact
+  hosts: webservers
+  become: yes
+  vars:
+    artifact_src: /var/lib/jenkins/workspace/Prog8/target/calculator-java-1.0-SNAPSHOT.jar
+    artifact_dest: /opt/myapp/calculator-java-1.0-SNAPSHOT.jar
+
+  tasks:
+    - name: Copy artifact to remote server
+      copy:
+        src: "{{ artifact_src }}"
+        dest: "{{ artifact_dest }}"
+        mode: '0755'
+
+    - name: Restart application (optional)
+      shell: systemctl restart myapp
+      ignore_errors: yes
+
