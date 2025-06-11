@@ -3,7 +3,7 @@
   hosts: webservers
   become: yes
   vars:
-    artifact_src: /var/lib/jenkins/workspace/Calculator-Java/target/calculator-java-1.0-SNAPSHOT.jar
+    artifact_src: /var/lib/jenkins/workspace/Prog8/target/calculator-java-1.0-SNAPSHOT.jar
     artifact_dest: /opt/myapp/calculator-java-1.0-SNAPSHOT.jar
 
   tasks:
